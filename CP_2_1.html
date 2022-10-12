@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Самостійна 2.1</title>
+	<style>
+		body{
+			background: rgb(101, 51, 151, 0.5);
+		}
+		
+.borrr1 {
+	border: 5px solid;
+		
+}
+.borrr2 {
+		border: 5px double saddlebrown;
+}
+.borrr3 {
+		border: 5px darkcyan;
+		border-style:  solid dotted ;
+
+}
+.borrr4 {
+	border: 5px darkkhaki solid ;
+	border-radius: 50%;
+}
+.marg1 {
+	margin: none;
+}
+.marg2 {
+	margin-right: 20px;
+
+}
+.marg3 {
+	margin-top: 20px;
+}
+.marg4 {
+	margin-left: 20px;
+}
+.marg5 {
+	margin-bottom: 20px;
+}
+.marg6 {
+	margin: 20px 40px 50px 10px;
+	
+}
+.mar div{
+	color:rgba(2, 252, 10, 0.933)
+}
+.pad1 {
+	padding: 25px;
+  background-color: lightblue;
+  min-width: 100px;
+}
+.pad2 {
+	padding: 25px 30px;
+  background-color: darkmagenta;
+  max-width: 500px;
+}
+.pad3 {
+	padding: 25px 30px 5px;
+	background-color: aquamarine;
+  max-width: 400px;
+
+}
+.pad4 {
+		padding: 10px 25px 30px 5px;
+  max-width: 300px;
+	background-color: beige;
+}
+
+.pad div{
+	border: 2px solid darkcyan;
+}
+
+.blok 
+{
+  width: 300px;
+  border: 15px solid green;
+ padding: 50px;
+ margin: 20px;
+}
+
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+table {
+  border: 1px solid black;
+   width: 50%;
+}
+th {
+  height: 70px;
+}
+td {
+ text-align: center;
+ height: 50px;
+ vertical-align: bottom;
+}
+#rcorners1 {
+  border-radius: 25px;
+  background: bisque;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+.anim-obj {
+	width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+
+}
+.anim-obj:hover{
+  animation-name: example;
+  animation-duration: 4s;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.colloms {
+	 column-count: 3;
+	 column-rule-style: solid;
+	 column-gap: 10px;
+}
+.button {
+  background-color: darkslateblue;
+  border: none;
+  color: rosybrown;
+  padding: 15px 32px;
+  text-align: center;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8f71717b;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(42, 10, 97, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.key {
+  border: 2px double palevioletred;
+}
+
+.word {
+  border: inherit;
+}
+.shad {
+	text-shadow: 2px 2px darkcyan;
+}
+
+.task-to-do {
+	background: rgb(15, 133, 27);
+	color: aquamarine;
+	padding: 10px;
+	max-width: 260px;
+	box-shadow: 5px 5px darkseagreen;
+}
+.go {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+.go:hover {
+  width: 50%;
+  background: green;
+}
+.word-transit {
+  width: 11em; 
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+
+	</style>
+</head>
+<body>
+	<h1>Текст без межі</h1>
+	<h2 class="borrr1">Текст з межею</h2>
+	<h3 class="borrr2">Текст з межею</h3>
+	<h4 class="borrr3">Текст з межею</h4>
+	<h5 class="borrr4">Текст з межею</h5>
+
+	<div class="mar">
+			<div class="marg1">відступ 1</div>
+	<div class="marg2">відступ 2</div>
+	<div class="marg3">відступ 3</div>
+	<div class="marg4">відступ 4</div>
+	<div class="marg5">відступ 5</div>
+	<div class="marg6">відступ 6</div>
+	<div class="marg7">відступ 7</div>
+	</div>
+
+	<div class="pad">
+		<div class="pad1">Padding 1</div>
+	<div class="pad2">Padding 2</div>
+	<div class="pad3">Padding 3</div>
+	<div class="pad4">Padding 4</div>
+	</div>
+
+	
+	
+	<div class="blok">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, consequuntur? Accusamus minima aperiam temporibus quidem laudantium dolore neque fugit porro quaerat eveniet recusandae delectus tenetur eos, reiciendis et consequuntur ullam.</div>	
+<script src="https://kit.fontawesome.com/26e3ee569a.js"></script>
+<i class="fas fa-file"></i>
+<i class="fas fa-bars"></i>
+	<a href="https://www.google.com/search?q=%D0%B2%D0%BE%D0%B3%D0%BD%D0%B5%D0%B3%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D0%B8&rlz=1C1CHZN_ruUA964UA964&oq=%D0%B2%D0%BE%D0%B3%D0%BD%D0%B5%D0%B3%D0%B0%D1%81%D0%BD%D0%B8%D0%BA%D0%B8&aqs=chrome..69i57j0i512l9.15848j0j7&sourceid=chrome&ie=UTF-8">Посилання</a>
+<br>
+  <ul class="a">
+        <li>елемент 1</li>
+		<li>елемент 2</li>
+		<li>елемент 3</li>
+    </ul>
+    <ul class="b">
+ <li>елемент 1</li>
+		<li>елемент 2</li>
+		<li>елемент 3</li>
+    </ul>
+    <ol class="c">
+        <li>елемент 1</li>
+		<li>елемент 2</li>
+		<li>елемент 3</li>
+    </ol>
+    <ol class="d">
+        <li>елемент 1</li>
+		<li>елемент 2</li>
+		<li>елемент 3</li>
+    </ol>
+
+	 <table>
+        <tr>
+<th>Мова</th>
+<th>Країна</th>
+<th>Поширення</th>
+        </tr>
+        <tr>
+         <td>Англійсяка</td>
+		 <td>Америка</td>
+		 <td>70%</td>
+        </tr>
+        <tr>
+          <td>Німецька</td>
+		  <td>Іспанія</td>
+		  <td>10%</td>
+        </tr>
+        <tr>
+          <td>Українаська</td>
+		  <td>Україна</td>
+		  <td>90%</td>
+        </tr>
+        <tr>
+          <td>Латина</td>
+		  <td>Іспанія</td>
+		  <td>5%</td>
+        </tr>
+    </table>
+	<p id="rcorners1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta molestias assumenda modi quis fugit consequatur optio beatae vel rerum accusamus repellat, tempora a, unde provident inventore! Sit distinctio quas aliquam!</p>
+
+	<div class="anim-obj"></div>
+
+	<div class="tooltip">Спрацьовує при наведенні
+  <span class="tooltiptext">Підказка</span>
+</div>
+<br>
+<div class="pagination">
+  <a >&laquo;</a>
+  <a >1</a>
+  <a class="active" >2</a>
+  <a >3</a>
+  <a >&raquo;</a>
+</div>
+
+<div class="colloms">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet quos cupiditate eligendi, perferendis dolorem molestias eius accusamus sed, quis fugit non sint reiciendis facere ea labore ut quas. Consectetur, autem? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam laudantium ratione accusantium voluptates dignissimos placeat quam recusandae architecto provident, officia similique quibusdam voluptatem reiciendis nemo natus, quidem perferendis quos dolorem.</div>
+	
+<button class="button">Button</button>
+<br>
+<div class="dropdown">
+  <span>Випадаючий напис</span>
+  <div class="dropdown-content">
+    <p>Ось і він</p>
+  </div>
+</div>
+
+<div class="key">Це текст з <span class="word">КЛЮЧОВИМ</span> словом</div>
+	
+<h4 class="shad">Заходьте на мій ютуб канал</h4>
+
+<div class="task-to-do">Вправа для домашнього опрацювання</div>
+<br>
+<div class="go"></div>
+<br>
+
+<div class="word-transit">перенос найдовшого українського слова слова: а-фторсульфо-нилоксиалканперфторкарбонова кислота</div>
+
+</body>
+</html>
